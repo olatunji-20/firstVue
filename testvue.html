@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VUE TESTING</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="testvue.css" type="text/css">
+        
+    </head>
+
+    <body>
+        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium hic nam consectetur porro iste harum praesentium id, unde quas dicta doloribus consequatur earum fuga tenetur veritatis vero laboriosam asperiores magnam?</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quas nesciunt quae, soluta laborum officiis officia eaque ullam ab nihil cumque fugiat est asperiores iste ad reprehenderit sequi eveniet repellendus.</h2>
+        <div id="app">
+            
+            <h1>hello {{firstName}} </h1>
+            <br><br>
+            <img v-bind:class="gender" v-bind:src="image" v-bind:alt="firstName">
+            <h2>{{firstName}} {{lastName}}</h2>
+            <h2>email: {{email}}</h2>
+            <h2>gender: {{gender}}</h2>
+            <br>
+            <button v-bind:class="gender" v-on:click="getUser()">Get User</button>
+        </div>
+
+        <script src="https://unpkg.com/vue@3.0.5"> </script>
+        <script src="testvue.js"></script>
+
+
+    </body>
+</htnk>
