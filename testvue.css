@@ -1,37 +1,68 @@
-body {
-    background-color: aqua;
-    font-family: sacramento;
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    padding: 40px;
 }
 
 #app {
-    background-color: bisque;
-    width: 600px;
-    height: 900px;
-    margin: 100px auto;
+    background-color: #e6e6e644;
+    width: 60%;
+    height: auto;
+    margin: 40px auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
+    border-radius: 3px;
+}
+
+#app h1 {
+    font-size: 30px;
 }
 
 img {
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
-    margin: 0px auto;
+    margin: 40px auto;
 }
 
 button {
-    background-color: transparent;
+    background-color: teal;
+    color: white;
     width: 150px;
     height: 40px;
+    line-height: 0px;
+    border: 0px;
+    border-radius: 3px;
 }
 
 .male {
-    border: 5px solid green ;
-    background-color: green;
+    border: 2px solid green;
+    background-color: yellowgreen;
 }
 
 .female {
-    border: 5px solid hotpink;
-    background-color: hotpink;
+    border: 2px solid hotpink;
+    background-color: pink;
+}
+
+@media screen and (max-width: 400px) {
+    h2 {
+        padding: 10px;
+        font-size: 18px;
+    }
+    #app {
+        width: 95%;
+        margin: 20px auto;
+    }
+    img {
+        width: 120px;
+        height: 120px;
+        margin: 20px auto;
+    }
+    #app h1 {
+        font-size: 25px;
+    }
 }
